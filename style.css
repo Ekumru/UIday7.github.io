@@ -1,0 +1,116 @@
+*{
+    background-color: rgb(80, 79, 79);
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+.head{
+    text-align: center;
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: wheat;
+    grid-column-start: 2;
+    
+}
+.Settingsmenu{
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    list-style-type:none;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    width: 300px;
+   
+    
+    
+}
+.disp{
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFD700;
+    grid-column-start: 2;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+       
+     
+}
+.disp>div{
+    margin-bottom: 30px;
+    
+}
+.graph{
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFD700;
+    
+}
+label{
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: wheat
+}
+li{
+    list-style-type:none;
+    color: #FFD700;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    background-color: rgb(43, 43, 43); /* Bu bölgenin arka planı açık kırmızı */
+  
+    
+   
+}
+svg{
+    text-align: center;
+    vertical-align: middle;
+    background-color:  rgb(43, 43, 43);
+}
+option{
+    color: white;
+    padding-left: 50px;
+}
+select{
+    color: white;
+    text-align: center;
+    
+}
+.save{
+    border: none;
+    background: linear-gradient(60deg, #FFD700, #695f23);
+    color: white;
+    height: 30px;
+    width: 100px;
+}
+.cancel{
+    border: none;
+    background: linear-gradient(60deg, rgb(189, 57, 57), rgb(83, 26, 26));
+    color: white;
+    height: 30px;
+    width: 100px;
+}
+.muted{
+    grid-column-start: 2;
+    padding-left: 40px;
+}
+.buttons{
+    grid-column-start: 2;
+    padding-left: 40px;
+    margin-top: 30px;
+           
+    }
+
+    @media (max-width: 768px) {
+        .container{
+           display: flex;
+           flex-direction: column;
+           overflow: hidden;
+           margin-bottom: 20px;
+        }
+    }
